@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script>
+      WebFontConfig = {
+        google: {
+          families: [
+            "Open+Sans:300,400,600,700",
+            "Poppins:300,400,500,600,700,800",
+            "Oswald:300,400,500,600,700,800",
+            "Playfair+Display:900",
+            "Shadows+Into+Light:400",
+          ],
+        },
+      };
+      (function (d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src = "assets/js/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/demo1.min.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header class="header home">
+        <div class="header-middle text-dark sticky-header">
+          <div class="container">
+            <div class="header-left col-lg-2 w-auto pl-0">
+              <a href="demo1.html" class="logo">
+                <img
+                  src="assets/images/th.jpg"
+                  width="111"
+                  height="44"
+                  alt="Porto Logo"
+                />
+              </a>
+            </div>
+            <div class="header-right w-lg-max pl-2">
+              <div
+                class="header-search header-icon header-search-inline header-search-category w-lg-max"
+              >
+                <a href="#" class="search-toggle" role="button"
+                  ><i class="icon-search-3"></i
+                ></a>
+                <form action="#" method="get">
+                  <div class="header-search-wrapper">
+                    <input
+                      type="search"
+                      class="form-control"
+                      name="q"
+                      id="q"
+                      placeholder="Search..."
+                      required
+                    />                   
+                    <button class="btn icon-magnifier" type="submit"></button>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="header-contact d-none d-lg-flex align-items-center pr-xl-5 mr-5 mr-xl-3 ml-5"
+              >
+                <i class="icon-phone-2"></i>
+                <h6 class="pt-1 line-height-1">
+                  Gọi cho chúng tôi <a
+                    href="tel:#"
+                    class="d-block text-dark ls-10 pt-1"
+                    >+123 5678 89</a
+                  >
+                </h6>
+              </div>
+              <a href="login.html" class="header-icon header-icon-user"
+                ><i class="icon-user-2"></i
+              >
+              <a href="demo1.html" class="header-icon"
+                ><i class="icon-wishlist-2"></i
+              ></a>
+              <div class="dropdown cart-dropdown">
+                <a href="demo1.html">
+                  <i class="minicart-icon"></i>
+                  <span class="cart-count badge-circle">3</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main home">
+          <div class="page-header">
+            <div class="container d-flex flex-column align-items-center">
+              <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                <div class="container">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="demo1.html">Trang chủ
+					</a></li>
+                   
+                    <li class="breadcrumb-item active" aria-current="page">
+						Tài khoản của tôi
+                    </li>
+                  </ol>
+                </div>
+              </nav>
+    
+              <h1>Tài Khoản</h1>
+            </div>
+          </div>
+    
+          <div class="container login-container">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="heading mb-1">
+                      <h2 class="title">Đăng nhập
+					</h2>
+                    </div>
+    
+                    <form action="#">
+                      <label for="login-email">
+						Tên người dùng hoặc địa chỉ email
+                        <span class="required">*</span>
+                      </label>
+                      <input type="email" class="form-input form-wide" id="login-email" required />
+    
+                      <label for="login-password">
+                        Mật khẩu
+
+                        <span class="required">*</span>
+                      </label>
+                      <input type="password" class="form-input form-wide" id="login-password" required />
+    
+                      <div class="form-footer">
+                        <div class="custom-control custom-checkbox mb-0">
+                          <input type="checkbox" class="custom-control-input" id="lost-password" />
+                          <label class="custom-control-label mb-0" for="lost-password">Đăng ký</label>
+                        </div>
+    
+                        <a href="forgot-password.html"
+                          class="forget-password text-dark form-footer-right">Quên Mật khẩu?</a>
+                      </div>
+                      <button type="submit" class="btn btn-dark btn-md w-100">
+                        ĐĂNG NHẬP
+
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="heading mb-1">
+                      <h2 class="title">Đăng ký
+					</h2>
+                    </div>
+    
+                    <form action="#">
+                      <label for="register-email">
+						Địa chỉ email                        <span class="required">*</span>
+                      </label>
+                      <input type="email" class="form-input form-wide" id="register-email" required />
+    
+                      <label for="register-password">
+                        Mật khẩu
+
+                        <span class="required">*</span>
+                      </label>
+                      <input type="password" class="form-input form-wide" id="register-password"
+                        required />
+    
+                      <div class="form-footer mb-2">
+                        <button type="submit" class="btn btn-dark btn-md w-100 mr-0">
+							Đăng ký
+
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </main>
+      <footer class="footer bg-dark position-relative">
+        <div class="footer-middle">
+          <div class="container position-static"> 
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 pb-2 pb-sm-0">
+                <div class="widget">
+                  <a href="demo1.html">
+                    <img
+                      src="assets/images/th.jpg"
+                      alt="Logo"
+                      class="logo-footer"
+                    />
+                  </a>
+                  <p class="m-b-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis nec vestibulum magna, et dapibus lacus. Duis nec
+                    vestibulum magna, et dapibus lacus.
+                  </p>
+                  <a href="#" class="read-more text-white">Tìm hiểu thêm...</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 pb-4 pb-sm-0">
+                <div class="widget mb-2">
+                  <h4 class="widget-title mb-1 pb-1">Thông tin liên hệ</h4>
+                  <ul class="contact-info m-b-4">
+                    <li>
+                      <span class="contact-info-label">Địa chỉ:</span>123 Điện Biên Phủ TP.HCMHCM
+                    </li>
+                    <li>
+                      <span class="contact-info-label">Điện thoại:</span
+                      ><a href="tel:">(+84) 123456789</a>
+                    </li>
+                    <li>
+                      <span class="contact-info-label">Email:</span>
+                      <a
+                        href="#"
+                        ><span
+                          class="__cf_email__"
+                          data-cfemail="ff929e9693bf9a879e928f939ad19c9092"
+                          >letanloc123@gmaiil.com</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <span class="contact-info-label"
+                        >Ngày/Giờ làm việc:</span
+                      >
+                      
+Thứ Hai - Chủ Nhật / 9:00 AM - 8:00 PM
+                    </li>
+                  </ul>
+                  <div class="social-icons">
+                    <a
+                      href="#"
+                      class="social-icon social-facebook icon-facebook"
+                      target="_blank"
+                      title="Facebook"
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon social-twitter icon-twitter"
+                      target="_blank"
+                      title="Twitter"
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon social-linkedin fab fa-linkedin-in"
+                      target="_blank"
+                      title="Linkedin"
+                    ></a>
+                  </div>
+                  <!-- End .social-icons -->
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-lg-3 -->
+
+              <div class="col-lg-3 col-sm-6 pb-2 pb-sm-0">
+                <div class="widget">
+                  <h4 class="widget-title pb-1">Dịch vụ khách hàng</h4>
+
+                  <ul class="links">
+                    <li><a href="#">Trợ giúp & Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Theo dõi đơn hàng</a></li>
+                    <li><a href="#">Vận chuyển & Giao hàng</a></li>
+                    <li><a href="#">Lịch sử đơn hàng</a></li>
+                    <li><a href="#">Tìm kiếm nâng cao</a></li>
+                      Tài khoản của tôi</a></li>
+                      <li><a href="dashboard.html"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-bottom d-sm-flex align-items-center">
+          
+
+            <div class="footer-right ml-auto mt-1 mt-sm-0">
+              <div class="payment-icons">
+                <span
+                  class="payment-icon visa"
+                  style="
+                    background-image: url(assets/images/payments/payment-visa.svg);
+                  "
+                ></span>
+                <span
+                  class="payment-icon paypal"
+                  style="
+                    background-image: url(assets/images/payments/payment-paypal.svg);
+                  "
+                ></span>
+                <span
+                  class="payment-icon stripe"
+                  style="
+                    background-image: url(assets/images/payments/payment-stripe.png);
+                  "
+                ></span>
+                <span
+                  class="payment-icon verisign"
+                  style="
+                    background-image: url(assets/images/payments/payment-verisign.svg);
+                  "
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="sticky-navbar">
+      <div class="sticky-info">
+        <a href="demo1.html"> <i class="icon-home"></i>Trang chủ
+		</a>
+      </div>
+    </div>
+
+   
+  
+
+    <a id="scroll-top" href="#top" title="Top" role="button"
+      ><i class="icon-angle-up"></i
+    ></a>
+
+    <script
+      data-cfasync="false"
+      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.plugin.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

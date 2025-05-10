@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <script>
+      WebFontConfig = {
+        google: {
+          families: [
+            "Open+Sans:300,400,600,700",
+            "Poppins:300,400,500,600,700,800",
+            "Oswald:300,400,500,600,700,800",
+            "Playfair+Display:900",
+            "Shadows+Into+Light:400",
+          ],
+        },
+      };
+      (function (d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src = "assets/js/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/demo1.min.css" />
+</head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header home">
+        <div class="header-middle text-dark sticky-header">
+          <div class="container">
+            <div class="header-left col-lg-2 w-auto pl-0">
+              <a href="demo1.html" class="logo">
+                <img
+                  src="assets/images/th.jpg"
+                  width="111"
+                  height="44"
+                  alt="Porto Logo"
+                />
+              </a>
+            </div>
+            <div class="header-right w-lg-max pl-2">
+              <div
+                class="header-search header-icon header-search-inline header-search-category w-lg-max"
+              >
+                <a href="#" class="search-toggle" role="button"
+                  ><i class="icon-search-3"></i
+                ></a>
+                <form action="#" method="get">
+                  <div class="header-search-wrapper">
+                    <input
+                      type="search"
+                      class="form-control"
+                      name="q"
+                      id="q"
+                      placeholder="Search..."
+                      required
+                    />                   
+                    <button class="btn icon-magnifier" type="submit"></button>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="header-contact d-none d-lg-flex align-items-center pr-xl-5 mr-5 mr-xl-3 ml-5"
+              >
+                <i class="icon-phone-2"></i>
+                <h6 class="pt-1 line-height-1">
+                  Gọi cho chúng tôi <a
+                    href="tel:#"
+                    class="d-block text-dark ls-10 pt-1"
+                    >+123 5678 89</a
+                  >
+                </h6>
+              </div>
+              <a href="login.html" class="header-icon header-icon-user"
+                ><i class="icon-user-2"></i
+              >
+              <a href="demo1.html" class="header-icon"
+                ><i class="icon-wishlist-2"></i
+              ></a>
+              <div class="dropdown cart-dropdown">
+                <a href="demo1.html">
+                  <i class="minicart-icon"></i>
+                  <span class="cart-count badge-circle">3</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main home">
+        <div class="container mb-2">
+          <div class="info-boxes-container row row-joined mb-2 font2">
+            <div class="info-box info-box-icon-left col-lg-4">
+              <i class="icon-shipping"></i>
+
+              <div class="info-box-content">
+                <h4>Miễn phí ship &amp; Trả hàng</h4>
+                <p class="text-body">Miễn phí vận chuyển cho tất cả các đơn hàng trên 1 triệu</p>
+              </div>   
+            </div>
+            <div class="info-box info-box-icon-left col-lg-4">
+              <i class="icon-money"></i>
+
+              <div class="info-box-content">
+                <h4>ĐẢM BẢO HOÀN TIỀN</h4>
+                <p class="text-body">Đảm bảo hoàn lại tiền 100%</p>
+              </div>
+            </div>
+            <div class="info-box info-box-icon-left col-lg-4">
+              <i class="icon-support"></i>
+              <div class="info-box-content">
+                <h4>HỖ TRỢ TRỰC TUYẾN 24/7</h4>
+                <p class="text-body">Hổx trợ khách hàng 24/7</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-9">
+              <div
+                class="home-slider slide-animate owl-carousel owl-theme mb-2"
+                data-owl-options="{
+							'loop': false,
+							'dots': true,
+							'nav': false
+						}"
+              >
+                <div
+                  class="home-slide home-slide1 banner banner-md-vw banner-sm-vw d-flex align-items-center"
+                >
+                  <img
+                    class="slide-bg"
+                    style="background-color: #2699d0"
+                    src="assets/images/banner-slide-may-in-bien-hoa-2.jpg"
+                    width="880"
+                    height="428"
+                    alt="home-slider"
+                  />
+                </div>
+                <div
+                  class="home-slide home-slide2 banner banner-md-vw banner-sm-vw d-flex align-items-center"
+                >
+                  <img
+                    class="slide-bg"
+                    style="background-color: #dadada"
+                    src="assets/images/download.jpg"
+                    width="880"
+                    height="428"
+                    alt="home-slider"
+                  />
+                </div>
+                <div
+                  class="home-slide home-slide3 banner banner-md-vw banner-sm-vw d-flex align-items-center"
+                >
+                  <img
+                    class="slide-bg"
+                    style="background-color: #e5e4e2"
+                    src="assets/images/mayin.jpg"
+                    width="880"
+                    height="428"
+                    alt="home-slider"
+                  />
+                  
+                </div>
+              </div>
+             
+
+              <h2
+                class="section-title ls-n-10 m-b-4 appear-animate"
+                data-animation-name="fadeInUpShorter"
+              >
+              Sản phẩm nổi bật
+                          </h2>
+
+              <div
+                class="products-slider owl-carousel owl-theme dots-top dots-small m-b-1 pb-1 appear-animate"
+                data-animation-name="fadeInUpShorter"
+              >
+                <div class="product-default inner-quickview inner-icon">
+                  <figure class="">
+                    <a href="#">
+                      <img
+                        src="assets/images/canon 233dw.jpg"
+                        width="205"
+                        height="205"
+                        alt="product"
+                      />
+                      
+                    <div class="label-group">
+                      <div class="product-label label-hot">HOT</div>
+                      <div class="product-label label-sale">-20%</div>
+                    </div>
+                    <a
+                      href="ajax/product-quick-view.html"
+                      class="btn-quickview"
+                      title="Quick View"
+                      >Quick View</a
+                    >
+                    
+                  </figure>
+                  <div class="product-details">
+                    <h3 class="product-title">
+                      <a href="demo1-product.html">Máy in Canon LBP 243dw</a>
+                    </h3>
+                    <div class="ratings-container">
+                      
+                    </div>
+                    <div class="price-box">
+                      <span class="product-price">4,900,000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-default inner-quickview inner-icon">
+                  <figure class="img-effect">
+                    <a href="demo1-product.html">
+                      <img
+                        src="assets/images/may-in-canon-lbp-621cw.jpg"
+                        width="205"
+                        height="205"
+                        alt="product"
+                      />
+                    </a>
+                    <a
+                      href="ajax/product-quick-view.html"
+                      class="btn-quickview"
+                      title="Quick View"
+                      >Quick View</a
+                    >
+                  </figure>
+                  <div class="product-details">
+                    <div class="category-wrap">
+                      <a
+                        href="wishlist.html"
+                        title="Add to Wishlist"
+                        class="btn-icon-wish"
+                        ><i class="icon-heart"></i
+                      ></a>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="#">Máy In Laser Màu Canon LBP 633CDW
+                      </a>
+                    </h3>
+                    <div class="price-box">
+                      <span class="product-price">6,650,000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-default inner-quickview inner-icon">
+                  <figure class="img-effect">
+                    <a href="demo1-product.html">
+                      <img
+                        src="assets/images/Canon_MF3010.jpg"
+                        width="205"
+                        height="205"
+                        alt="product"
+                      />
+                      
+                    </a>
+                    <div class="label-group">
+                      <div class="product-label label-hot">HOT</div>
+                      <div class="product-label label-sale">-30%</div>
+                    </div>
+                    
+                    <a
+                      href="#"
+                      class="btn-quickview"
+                      title="Quick View"
+                      >Quick View</a
+                    >
+                  </figure>
+                  <div class="product-details">
+                    <h3 class="product-title">
+                      <a href="#">Máy in đa năng Canon MF 3010
+                      </a>
+                    </h3>
+                    <div class="price-box">
+                      <span class="product-price">5,850,000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-default inner-quickview inner-icon">
+                  <figure class="img-effect">
+                    <a href="demo1-product.html">
+                      <img
+                        src="assets/images/445dw.jpg"
+                        width="205"
+                        height="205"
+                        alt="product"
+                      />
+                     
+                    </a>
+                    <div class="label-group">
+                      <div class="product-label label-hot">HOT</div>
+                    </div>
+                    <div class="btn-icon-group">  
+                    <a
+                      href="ajax/product-quick-view.html"
+                      class="btn-quickview"
+                      title="Quick View"
+                      >Quick View</a
+                    >
+                  </figure>
+                  <div class="product-details">
+                    <div class="category-wrap">
+                      <a
+                        href="#"
+                        title="Add to Wishlist"
+                        class="btn-icon-wish"
+                        ><i class="icon-heart"></i
+                      ></a>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="#">Máy In Laser Màu Canon LBP 631CW</a>
+                    </h3>
+                    <div class="price-box">
+                      <span class="product-price">5,950,000đ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+              <hr class="mt-1 mb-3 pb-2" />
+
+              <div class="feature-boxes-container">
+                <div class="row">
+                  <div
+                    class="col-md-4 appear-animate"
+                    data-animation-name="fadeInRightShorter"
+                    data-animation-delay="200"
+                  >
+                    <div class="feature-box feature-box-simple text-center">
+                      <i class="icon-earphones-alt"></i>
+
+                      <div class="feature-box-content p-0">
+                        <h3 class="mb-0 pb-1">Hỗ trợ khách hàng</h3>
+                        <h5 class="mb-1 pb-1">Cần hỗ trợ?</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 appear-animate"
+                    data-animation-name="fadeInRightShorter"
+                    data-animation-delay="400"
+                  >
+                    <div class="feature-box feature-box-simple text-center">
+                      <i class="icon-credit-card"></i>
+
+                      <div class="feature-box-content p-0">
+                        <h3 class="mb-0 pb-1">Bảo đảm thanh toán
+                        </h3>
+                        <h5 class="mb-1 pb-1">An toàn & Nhanh chóng</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 appear-animate"
+                    data-animation-name="fadeInRightShorter"
+                    data-animation-delay="600"
+                  >
+                    <div class="feature-box feature-box-simple text-center">
+                      <i class="icon-action-undo"></i>
+
+                      <div class="feature-box-content p-0">
+                        <h3 class="mb-0 pb-1">Trả lại</h3>
+                        <h5 class="mb-1 pb-1">Dễ dàng & Miễn phí</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-overlay"></div>
+            <div class="sidebar-toggle custom-sidebar-toggle">
+              <i class="fas fa-sliders-h"></i>
+            </div>
+            <aside class="sidebar-home col-lg-3 order-lg-first mobile-sidebar">
+              <div
+                class="side-menu-wrapper text-uppercase mb-2 d-none d-lg-block"
+              >
+                <h2 class="side-menu-title bg-gray ls-n-25">
+                  Các loại hàng
+                </h2>
+
+                <nav class="side-nav">
+                  <ul class="menu menu-vertical sf-arrows">
+                    <li class="active">
+                      <a href="demo1.html"><i class="icon-home"></i>Trang chủ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="demo1-shop.html" class="sf-with-ul"
+                        ><i class="sicon-badge"></i>MÁY IN CANON</a
+                      >
+                      <div class="megamenu megamenu-fixed-width megamenu-3cols">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            
+                            <ul class="submenu">
+                              <li>
+                                <a href="category.html">Máy in Canon đơn năng
+                                </a>
+                              </li>
+                              <li>
+                                <a href="category-banner-boxed-slider.html"
+                                  >Máy in Canon đa chức năng
+                                  </a
+                                >
+                              </li>
+                              <li>
+                                <a href="category-banner-boxed-image.html"
+                                  >Máy in laser màu Canon</a
+                                >
+                              </li>
+                              <li>
+                                <a href="demo1-shop.html">Máy in phun màu Canon</a>
+                              </li>
+                              <li>
+                                <a href="category-sidebar-right.html"
+                                  >Máy in A3 Canon
+                                  </a
+                                >
+                              </li>
+                              <li>
+                                <a href="category-off-canvas.html"
+                                  >Máy Photocopy Canon</a
+                                >
+                              </li>
+                              
+                            </ul>
+                          </div>
+                          <div class="col-lg-4 p-0">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#" class="sf-with-ul"
+                        ><i class="sicon-basket"></i>MÁY IN HP
+                        </a
+                      >
+                      <div class="megamenu megamenu-fixed-width">
+                        <div class="row">
+                          <div class="col-lg-4">
+                    
+                            <ul class="submenu">
+                              <li><a href="product.html">Máy in Canon đơn năng
+                              </a></li>
+                              <li>
+                                <a href="product-variable.html"
+                                  >Máy in Canon đa chức năng
+                                  </a
+                                >
+                              </li>
+                              <li><a href="product.html">Máy in laser màu Canon
+                              </a></li>
+                              <li>
+                                <a href="product.html">Máy in phun màu Canon</a>
+                              </li>
+                              <li>
+                                <a href="product-custom-tab.html"
+                                  >Máy in A3 Canon</a
+                                >
+                              </li>
+                              <li>
+                                <a href="product-sidebar-left.html"
+                                  >Máy Photocopy Canon</a
+                                >
+                              </li>
+          
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="widget widget-banners px-3 pb-3 text-center">
+                <div class="owl-carousel owl-theme dots-small">
+                  <div class="banner d-flex flex-column align-items-center">
+                    <h3
+                      class="badge-sale bg-primary d-flex flex-column align-items-center justify-content-center text-uppercase"
+                    >
+                      <em>Sale</em>Nhiều mặt hàng
+                    </h3>
+
+                    <h4 class="sale-text text-uppercase">
+                      <small>UP TO</small>50<sup>%</sup><sub>off</sub>
+                    </h4>
+                    <p>
+                      MÁY IN HP,MÁY IN CANON,....
+                    </p>
+                    <a href="demo1-shop.html" class="btn btn-dark btn-md"
+                      >Xem ưu đãi</a
+                    >
+                  </div>
+                 
+                </div>
+              </div>
+
+              <div class="widget widget-newsletters bg-gray text-center">
+                <h3 class="widget-title text-uppercase m-b-3">
+                  Đăng ký mua hàng                </h3>
+                <p class="mb-2">
+                  Nhận tất cả thông tin mới nhất về Sự kiện, Khuyến mại và Ưu đãi.
+                </p>
+                <form action="#">
+                  <div
+                    class="form-group position-relative sicon-envolope-letter"
+                  >
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="newsletter-email"
+                      placeholder="Email address"
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    class="btn btn-primary btn-md"
+                    value="Subscribe"
+                  />
+                </form>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </main>
+      <footer class="footer bg-dark position-relative">
+        <div class="footer-middle">
+          <div class="container position-static"> 
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 pb-2 pb-sm-0">
+                <div class="widget">
+                  <a href="demo1.html">
+                    <img
+                      src="assets/images/th.jpg"
+                      alt="Logo"
+                      class="logo-footer"
+                    />
+                  </a>
+                  <p class="m-b-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis nec vestibulum magna, et dapibus lacus. Duis nec
+                    vestibulum magna, et dapibus lacus.
+                  </p>
+                  <a href="#" class="read-more text-white">Tìm hiểu thêm...</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 pb-4 pb-sm-0">
+                <div class="widget mb-2">
+                  <h4 class="widget-title mb-1 pb-1">Thông tin liên hệ</h4>
+                  <ul class="contact-info m-b-4">
+                    <li>
+                      <span class="contact-info-label">Địa chỉ:</span>123 Điện Biên Phủ TP.HCMHCM
+                    </li>
+                    <li>
+                      <span class="contact-info-label">Điện thoại:</span
+                      ><a href="tel:">(+84) 123456789</a>
+                    </li>
+                    <li>
+                      <span class="contact-info-label">Email:</span>
+                      <a
+                        href="#"
+                        ><span
+                          class="__cf_email__"
+                          data-cfemail="ff929e9693bf9a879e928f939ad19c9092"
+                          >letanloc123@gmaiil.com</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <span class="contact-info-label"
+                        >Ngày/Giờ làm việc:</span
+                      >
+                      
+Thứ Hai - Chủ Nhật / 9:00 AM - 8:00 PM
+                    </li>
+                  </ul>
+                  <div class="social-icons">
+                    <a
+                      href="#"
+                      class="social-icon social-facebook icon-facebook"
+                      target="_blank"
+                      title="Facebook"
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon social-twitter icon-twitter"
+                      target="_blank"
+                      title="Twitter"
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon social-linkedin fab fa-linkedin-in"
+                      target="_blank"
+                      title="Linkedin"
+                    ></a>
+                  </div>
+                  <!-- End .social-icons -->
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-lg-3 -->
+
+              <div class="col-lg-3 col-sm-6 pb-2 pb-sm-0">
+                <div class="widget">
+                  <h4 class="widget-title pb-1">Dịch vụ khách hàng</h4>
+
+                  <ul class="links">
+                    <li><a href="#">Trợ giúp & Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Theo dõi đơn hàng</a></li>
+                    <li><a href="#">Vận chuyển & Giao hàng</a></li>
+                    <li><a href="#">Lịch sử đơn hàng</a></li>
+                    <li><a href="#">Tìm kiếm nâng cao</a></li>
+                      Tài khoản của tôi</a></li>
+                      <li><a href="dashboard.html"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-bottom d-sm-flex align-items-center">
+          
+
+            <div class="footer-right ml-auto mt-1 mt-sm-0">
+              <div class="payment-icons">
+                <span
+                  class="payment-icon visa"
+                  style="
+                    background-image: url(assets/images/payments/payment-visa.svg);
+                  "
+                ></span>
+                <span
+                  class="payment-icon paypal"
+                  style="
+                    background-image: url(assets/images/payments/payment-paypal.svg);
+                  "
+                ></span>
+                <span
+                  class="payment-icon stripe"
+                  style="
+                    background-image: url(assets/images/payments/payment-stripe.png);
+                  "
+                ></span>
+                <span
+                  class="payment-icon verisign"
+                  style="
+                    background-image: url(assets/images/payments/payment-verisign.svg);
+                  "
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="sticky-navbar">
+      <div class="sticky-info">
+        <a href="demo1.html"> <i class="icon-home"></i>Home </a>
+      </div>
+    </div>
+
+   
+  
+
+    <a id="scroll-top" href="#top" title="Top" role="button"
+      ><i class="icon-angle-up"></i
+    ></a>
+
+    <script
+      data-cfasync="false"
+      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.plugin.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>
